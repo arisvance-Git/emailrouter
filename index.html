@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmailRouter</title>
+<meta name="description" content="EmailRouter is a private, single-user tool that files email attachments from its owner's Gmail into their own Google Drive.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>EmailRouter</h1>
+  <p class="lede">A private, single-user automation. It is not a public service and does not accept sign-ups.</p>
+
+  <p>EmailRouter runs on its owner's own Google Cloud project and acts only on its owner's own Google account. Once an hour it:</p>
+  <ul>
+    <li>looks for emails in the owner's Gmail inbox that match rules the owner has written (for example, statements from their bank),</li>
+    <li>saves those emails' attachments into folders in the owner's Google Drive, and</li>
+    <li>moves the processed emails, and some newsletters, to Gmail Trash.</li>
+  </ul>
+  <p>It reads its rules from a Google Sheet in the owner's Drive and emails the owner a short summary when something changes.</p>
+
+  <h2>Google account access</h2>
+  <p>When the owner authorizes EmailRouter, Google asks for permission to read, label and trash Gmail messages and send email, to manage Google Drive files, and to read Google Sheets. These permissions are used only for the tasks above, and only on the account that granted them.</p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+
+  <footer>Questions: open an issue at <a href="https://github.com/arisvance-Git/emailrouter/issues">github.com/arisvance-Git/emailrouter</a>.</footer>
+</main>
+</body>
+</html>

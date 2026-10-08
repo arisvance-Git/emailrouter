@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmailRouter Privacy Policy</title>
+<meta name="description" content="How EmailRouter, a private single-user tool, handles Google account data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lede">EmailRouter · Effective 8 October 2026</p>
+
+  <p>EmailRouter is a private automation used by one person on their own Google account. It has no other users, accounts, website features or analytics.</p>
+
+  <h2>What data it accesses</h2>
+  <ul>
+    <li><strong>Gmail:</strong> message headers (sender, subject, authentication results), attachments of messages that match the owner's routing rules, and message labels. It sends summary emails to the owner.</li>
+    <li><strong>Google Drive:</strong> the folders named in the owner's routing rules, to save attachments and avoid duplicates.</li>
+    <li><strong>Google Sheets:</strong> read-only access to the owner's routing-rules spreadsheet.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <p>Data is used only to file the owner's attachments into the owner's Drive, move processed or unwanted messages to the owner's Gmail Trash, and send the owner a summary. Nothing is used for advertising, profiling or any other purpose.</p>
+
+  <h2>Where data goes</h2>
+  <p>Data stays within the owner's Google account and the owner's Google Cloud project, where the automation runs. It is not sold, shared with or transferred to any third party. Operational logs (such as email subjects and senders of processed messages) are kept in the owner's Google Cloud Logging for up to 30 days.</p>
+
+  <h2>Storage and security</h2>
+  <p>The authorization token is stored encrypted in a private Cloud Storage bucket in the owner's project, readable only by the automation and the owner. Access to it is audit-logged.</p>
+
+  <h2>Revoking access</h2>
+  <p>The owner can revoke EmailRouter's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Limited Use</h2>
+  <p>EmailRouter's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Changes to this policy are published on this page. Questions: open an issue at <a href="https://github.com/arisvance-Git/emailrouter/issues">github.com/arisvance-Git/emailrouter</a>.</p>
+
+  <footer><a href="index.html">EmailRouter home</a></footer>
+</main>
+</body>
+</html>
